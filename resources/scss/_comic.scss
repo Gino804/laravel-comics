@@ -1,0 +1,61 @@
+@use "vars" as *;
+
+main {
+    margin-top: 400px;
+    padding-bottom: 50px;
+
+    .head {
+        background-color: $blue;
+        height: 70px;
+        margin-bottom: 50px;
+    }
+
+    figure {
+        width: 200px;
+        position: relative;
+        bottom: 390px;
+        img {
+            width: 200px;
+        }
+
+        &.thin {
+            bottom: 320px;
+            img {
+                transform: scale(1.45);
+                clip-path: inset(0 34px 0 34px);
+            }
+
+            .type {
+                top: -45px;
+                left: 5px;
+            }
+
+            .gallery {
+                bottom: -43px;
+                left: 3px;
+                right: 3px;
+            }
+        }
+
+        div {
+            position: absolute;
+            background-color: #00a9d9;
+            color: white;
+            text-transform: uppercase;
+            padding: 3px 8px;
+            font-size: 14px;
+        }
+
+        .type {
+            top: 0;
+            left: 0;
+        }
+
+        .gallery {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+    }
+}

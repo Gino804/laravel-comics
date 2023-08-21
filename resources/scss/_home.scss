@@ -1,17 +1,7 @@
 @use "vars" as *;
 
-#jumbotron {
-    height: 400px;
-
-    img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: top;
-    }
-}
-
 #comics {
+    margin-top: 400px;
     background-color: #1c1c1c;
     padding-bottom: 30px;
 
